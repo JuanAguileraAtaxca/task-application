@@ -1,0 +1,10 @@
+.AddTasksContainer{
+    padding: 20px; 
+}
+
+.AddTasksTitle{
+    font-size: 2.4rem; 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center; 
+}

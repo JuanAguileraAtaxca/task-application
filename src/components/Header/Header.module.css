@@ -1,0 +1,16 @@
+
+.HeaderFont {
+    font-size: 3rem; 
+    margin-top: 3rem; 
+    font-family: 'DynaPuff', cursive;
+}
+
+@media(min-width: 720px){
+    .HeaderFont{
+        font-size: 4rem;
+    }
+}
+
+.HeaderDirection{
+    text-align: center; 
+}
