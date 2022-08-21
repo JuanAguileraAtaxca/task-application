@@ -5,7 +5,7 @@ import Button from '.././Button/Button.jsx';
 const AddTasks = () => {
 
     return(
-        <form className={style.AddTasksContainer}>
+        <form className={style.AddTasksContainer + " center"}>
             <h2 className={style.AddTasksTitle}> Add a new task </h2>
             <div>
                 <Input placeHolder="Insert your task" typeInput="text"/>
