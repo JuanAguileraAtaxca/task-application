@@ -2,16 +2,36 @@
     padding: 20px; 
 }
 
-@media(min-width: 720px){
-    .AddTasksContainer{
-        max-width: 700px; 
-    }
-
-}
-
 .AddTasksTitle{
     font-size: 2.4rem; 
-    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     text-align: center; 
+}
+
+.AddTasksInput{
+    width: 100%; 
+    padding: 1.3rem 0.9rem; 
+    outline: none; 
+    border: none; 
+    border-radius: 0.8rem; 
+    margin-bottom: 1.5rem;
+}
+
+.AddTasksInput:focus::placeholder{
+    color: black; 
+}
+
+.AddTasksButton{
+    width: 100%; 
+    padding: 1rem; 
+    font-weight: 700; 
+    font-size: 17px; 
+    border: none; 
+    border-radius: 0.8rem; 
+    color: white; 
+    background-color: var(--purple);
+}
+
+.AddTasksButton:hover{
+    background-color: var(--lila);
 }

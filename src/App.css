@@ -1,0 +1,9 @@
+
+
+@media(min-width: 720px){
+    .AppContent{
+        max-width: 900px; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

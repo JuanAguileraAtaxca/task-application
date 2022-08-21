@@ -6,6 +6,10 @@
     --light-gray: #FAFAFA; 
 }
 
+.fontUbuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+
 *{
     box-sizing: border-box; 
 }
@@ -24,4 +28,10 @@ body{
 
 .center{
     margin: 50px auto 20px; 
+}
+
+.center-elements{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
