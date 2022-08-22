@@ -19,10 +19,8 @@ const AddTasks = ({tasks, setTasks}) => {
 
     return(
         <form onSubmit={hadleSubmit} className={style.AddTasksContainer}>
-            {/* this token is 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 */ }
             
             {validation && <p className={style.AddTasksError + " fontUbuntu"}>Campo vacio! </p>}
-
             <h2 className={style.AddTasksTitle + " fontUbuntu"}> Add a new task </h2>
             <input onChange={e => setTask(e.target.value)} className={style.AddTasksInput + " fontUbuntu"} placeholder="Add your task" type="text" value={task}/>
             <input className={style.AddTasksButton + " fontUbuntu"} type="submit" value="add tasks" />
