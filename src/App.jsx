@@ -6,12 +6,29 @@ import {useState} from 'react';
 
 function App() {
   const [tasks, setTasks] = useState([]); 
+  const [update, setUpdate] = useState(false);
+  const [taskUpdate, setTaskUpdate] = useState({}); 
+
   return (
     <>
       <Header />
       <div className='AppContent center'>
-        <AddTasks tasks={tasks} setTasks={setTasks}/>
-        <Tasks tasks={tasks}/>
+        <AddTasks 
+          tasks={tasks} 
+          setTasks={setTasks} 
+          update={update} 
+          setUpdate={setUpdate}
+          taskUpdate={taskUpdate}
+        />
+
+        <Tasks 
+          tasks={tasks} 
+          setTasks={setTasks} 
+          setUpdate={setUpdate} 
+          update={update} 
+          setTaskUpdate={setTaskUpdate}
+        />
+
       </div>
     </>
   )

@@ -11,45 +11,6 @@
     }
 }
 
-.Task{
-    padding: 2rem; 
-    background-color: white;
-    border-radius: 1rem; 
-    margin-bottom: 1.5rem; 
-}
-
-.TasksButtons{
-    display: flex; 
-}
-
-.TasksButton{
-    background-color: transparent;
-    border: none; 
-    padding: 1.5rem; 
-    font-size: 18px; 
-    color: white; 
-    border-radius: 50%; 
-}
-
-.TasksButton:nth-child(1){
-    margin-right: 20px;
-    background-color: red;
-}
-
-.TasksButton:nth-child(1):hover{
-    margin-right: 20px;
-    background-color: #F01212;
-}
-
-.TasksButton:nth-child(2){
-    background-color: blue;
-}
-
-.TasksButton:nth-child(2):hover{
-    background-color: #2045CF;
-}
-
-
 .TasksWithOut{
     text-align: center; 
     
