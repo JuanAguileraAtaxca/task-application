@@ -5,8 +5,12 @@ import CardTask from '.././CardTask/CardTask.jsx';
 const Tasks = ({tasks, setTasks, setUpdate, setTaskUpdate}) => {
 
     const deleteElement = (id) =>{
-        const newTasks = tasks.filter(task => task.id !== id);     
-        setTasks(newTasks); 
+        const confirm = window.confirm("Do you wanna delete this task?"); 
+        if(confirm){
+            const newTasks = tasks.filter(task => task.id !== id);     
+            setTasks(newTasks); 
+        }
+        
     }
 
     return (
@@ -24,7 +28,7 @@ const Tasks = ({tasks, setTasks, setUpdate, setTaskUpdate}) => {
                     })}
                 </>
                 :
-                <h1 className={style.TasksWithOut + " fontUbuntu"}> Agrega nuevas tareas <span className='center-elements'> <FaPlusCircle /> </span> </h1>
+                <h1 className={style.TasksWithOut + " fontUbuntu"}> Add new tasks <span className='center-elements'> <FaPlusCircle /> </span> </h1>
             }
             
             

@@ -7,7 +7,6 @@ const CardTask = ({task, deleteElement, setUpdate, setTaskUpdate }) => {
     const updating = (object) =>{
         setUpdate(true);
         setTaskUpdate(object);
-        console.log(object);
     }
 
     return (
